@@ -373,11 +373,11 @@
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="footer-form">
             <p class="footer-title">Subscribe</p>
             <form class="subscribe" name="subscribe">
-                <label>
-                    <input class="input subscribe-input" type="text" placeholder="E-mail"/>
+                <label class="subscribe-label">
+                    <input class="input subscribe-input" type="email" name="email" placeholder="E-mail"/>
                 </label>
                 <button class="btn subscribe-btn" type="submit">
                     Subscribe
@@ -397,60 +397,59 @@
                 <use href="./images/icons.svg#close"></use>
             </svg>
         </button>
-        <div class="order">
-            <form class="order-form" name="order">
-                <p class="order-title">
-                    Leave your contacts and we will call you back
-                </p>
-
-                <div class="order-inputs">
-                    <label class="order-label">
-                        Name
-                        <input class="input order-input" type="text" name="name" autofocus>
-                        <svg class="input-icon" width="18" height="24">
-                            <use href="./images/icons.svg#person"></use>
-                        </svg>
-                    </label>
-
-                    <label class="order-label">
-                        Phone
-                        <input class="input order-input" type="tel" name="phone">
-                        <svg class="input-icon" width="18" height="24">
-                            <use href="./images/icons.svg#phone"></use>
-                        </svg>
-                    </label>
-
-                    <label class="order-label"> Email <input class="input order-input" type="email" name="email">
-                        <svg class="input-icon" width="18" height="24">
-                            <use href="./images/icons.svg#email"></use>
-                        </svg>
-                    </label>
-
-                    <label class="order-label">
-                        Comment
-                        <textarea
-                            class="input description-input"
-                            name="comment"
-                            rows="4"
-                            placeholder="Text input"
-                        ></textarea>
-                    </label>
-                </div>
-
-                <label class="order-label-checkbox"> <input class="checkbox" type="checkbox" name="privacy">
-                    <svg class="unchecked-icon" width="16" height="16">
-                        <use href="./images/icons.svg#unchecked"></use>
+        <p class="modal-title">
+            Leave your contacts and we will call you back
+        </p>
+        <form class="order-form" name="order">
+            <div class="order-inputs">
+                <label class="order-label">
+                    Name
+                    <input class="input order-input" type="text" name="user-name" autofocus>
+                    <svg class="input-icon" width="18" height="24">
+                        <use href="./images/icons.svg#person"></use>
                     </svg>
-                    <svg class="checked-icon" width="16" height="16">
-                        <use href="./images/icons.svg#checked"></use>
-                    </svg>
-                    I accept the terms and conditions of the <a class="order-policy" href="">Privacy Policy</a>
                 </label>
 
-                <button class="btn order-btn" type="submit">Send
-                </button>
-            </form>
-        </div>
+                <label class="order-label">
+                    Phone
+                    <input class="input order-input" type="tel" name="phone">
+                    <svg class="input-icon" width="18" height="24">
+                        <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                </label>
+
+                <label class="order-label">
+                    Email
+                    <input class="input order-input" type="email" name="email">
+                    <svg class="input-icon" width="18" height="24">
+                        <use href="./images/icons.svg#email"></use>
+                    </svg>
+                </label>
+
+                <label class="order-label">
+                    Comment
+                    <textarea
+                        class="input description-input"
+                        name="comment"
+                        rows="4"
+                        placeholder="Text input"
+                    ></textarea>
+                </label>
+            </div>
+
+            <label class="order-label-checkbox"> <input class="checkbox" type="checkbox" name="privacy">
+                <svg class="unchecked-icon" width="16" height="16">
+                    <use href="./images/icons.svg#unchecked"></use>
+                </svg>
+                <svg class="checked-icon" width="16" height="16">
+                    <use href="./images/icons.svg#checked"></use>
+                </svg>
+                I accept the terms and conditions of the <a class="order-policy" href="">Privacy Policy</a>
+            </label>
+
+            <button class="btn order-btn" type="submit">Send
+            </button>
+        </form>
     </div>
 </div>
 <script src="./js/modal.js"></script>

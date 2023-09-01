@@ -734,7 +734,7 @@ main {
             fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .order-label-checkbox + .order-checkbox {
+.checkbox:checked + .order-label-checkbox .order-checkbox {
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
@@ -761,4 +761,5 @@ main {
     border-radius: 4px;
     background: var(--iris);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
